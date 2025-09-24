@@ -31,3 +31,14 @@ void hitungBMI(
     'kategori': kategori,
   });
 }
+
+void tampilkanRiwayat(List<Map<String, dynamic>> riwayat) {
+  print('--- Riwayat Perhitungan BMI ---');
+  for (var data in riwayat) {
+    print('Tinggi: ${data['tinggi']} cm');
+    print('Berat: ${data['berat']} kg');
+    print('BMI: ${data['bmi'].toStringAsFixed(2)}');
+    print('Kategori: ${data['kategori']}');
+    print('-------------------------------');
+  }
+}
